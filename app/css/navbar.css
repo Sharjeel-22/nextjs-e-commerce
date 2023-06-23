@@ -1,0 +1,11 @@
+.container {
+    height: 300px;
+    margin-right: 100px;
+}
+.nav-items {
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+    font-size: 30px;
+    font-family:'Oswald', sans-serif;
+}
