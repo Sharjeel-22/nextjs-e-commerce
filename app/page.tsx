@@ -5,7 +5,7 @@ import Navbar from "./component/navbar";
 import Footer from "./component/footer";
 import { useEffect, useState } from "react";
 import Card from "./component/card";
-import Animation from "./component/animation";
+import NewEmployee from "./component/add-employee";
 
 export default function Home() {
   const [name, setName] = useState("Sharjeel");
@@ -65,6 +65,11 @@ export default function Home() {
         <button className="submit" onClick={addNewItems}>
           <span>Click Me</span>
         </button>
+      </div>
+      <div className="employee-birthday-section">
+        <div className="employee-form">
+          <NewEmployee/>
+        </div>
       </div>
       <Footer />
     </main>
