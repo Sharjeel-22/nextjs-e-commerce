@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../css/animation.css';
 
 export default function Animation () {
@@ -10,7 +10,6 @@ export default function Animation () {
       <source src={"https://thumbs.gfycat.com/SprySecondhandGangesdolphin-mobile.mp4"} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
-    {/* Additional content goes here */}
   </div>
   )  
 }

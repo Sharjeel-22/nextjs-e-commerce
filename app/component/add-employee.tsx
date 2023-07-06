@@ -137,7 +137,6 @@ export default function NewEmployee() {
     setEmployees([...employees]);
   };
   function removeItem(i: any) {
-    console.log("Check :: ", i);
     let results = employees.filter((res: any, index: number) => index !== i);
     setEmployees([...results]);
   }
