@@ -15,8 +15,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple" />
       <body className={inter.className}>{children}</body>
     </html>
   )

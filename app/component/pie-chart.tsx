@@ -1,14 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { PieChart, Pie, Cell } from 'recharts';
 
-const data = [
-  { name: 'Red', value: 12 },
-  { name: 'Blue', value: 19 },
-];
+
 
 const COLORS = [ 'yellow', 'purple'];
 
 const PieChartComponent = (props:any) => {
+  let data = props.data;
   return (
     <PieChart width={400} height={400}>
       <Pie
@@ -21,7 +19,7 @@ const PieChartComponent = (props:any) => {
         fill="#8884d8"
         label
       >
-        {data.map((entry, index) => (
+        {data.map((entry:any, index:any) => (
           <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
         ))}
       </Pie>
