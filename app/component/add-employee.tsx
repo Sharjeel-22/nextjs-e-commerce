@@ -169,10 +169,11 @@ export default function NewEmployee() {
     ];
     setPieData([...obj]);
   };
+  
   return (
     <>
       <div className="wrapper">
-        <PieChart data={pieData} />
+         <PieChart data={pieData} />
         <div className="row">
           <div className="title">
             <h1>Add Employees for birthday</h1>
